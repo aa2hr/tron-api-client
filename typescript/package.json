@@ -1,0 +1,25 @@
+{
+  "name": "@aa2hr/tron-api-client",
+  "version": "0.2.0",
+  "description": "TypeScript client for TRON HTTP / TronGrid APIs",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "tron": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test src/**/*.test.ts"
+  },
+  "keywords": ["tron", "trongrid", "trc20", "trc721", "web3"],
+  "author": "aa2hr",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
